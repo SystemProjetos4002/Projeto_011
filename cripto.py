@@ -10,3 +10,6 @@ def encriptar(e):
 def decriptar(e):
     decript = fernet.decrypt(e)
     return decript
+
+encriptado = encriptar(b'PROJETO_RH')
+print(encriptado)
