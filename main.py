@@ -1,6 +1,11 @@
 import conection as c
+import json
 
-conexao = c.conecta('152.70.214.62','Hildean.Dantas','cachoromolhado','PROJETO_RH')
+with open('config.json', 'r') as j:
+     config = json.loads(j.read())
+print(config)
+
+conexao = c.conecta('152.70.214.62','projetos','@g0r@vai4002','PROJETO_RH')
 
 cursor = conexao.cursor(buffered = True) 
 
