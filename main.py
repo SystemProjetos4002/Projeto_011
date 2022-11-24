@@ -1,6 +1,8 @@
 import conection as c
 import json
 
+print("a")
+
 with open('config.json', 'r') as j:
      config = json.loads(j.read())
 print(config)
